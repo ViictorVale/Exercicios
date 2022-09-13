@@ -6,7 +6,7 @@ namespace Exercicio_faca_enquanto
     {
         static void Main(string[] args)
         {
-            char condicao;
+            string condicao;
             do
             {
                 Console.Write("Digite a temperatura em Celsius: ");
@@ -14,9 +14,15 @@ namespace Exercicio_faca_enquanto
                 double F = 9 * C / 5 + 32;
                 Console.WriteLine("Equivalente em Fahrenheit: " + F.ToString("F1", CultureInfo.InvariantCulture));
                 Console.WriteLine("Deseja repetir (s/n)? ");
-                condicao = char.Parse(Console.ReadLine());
+                condicao = (Console.ReadLine());
+                while (condicao != "s" && condicao != "n")
+                {
+                    Console.WriteLine("Digite s ou n! ");
+                    condicao = (Console.ReadLine());
+                }
             } 
-            while (condicao == 's');
+            
+            while (condicao == "s");
 
             Console.ReadLine();
         }

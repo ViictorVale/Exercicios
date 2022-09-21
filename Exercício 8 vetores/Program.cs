@@ -23,7 +23,7 @@ namespace Exercício_8_vetores
             double media = soma / n;
             Console.WriteLine(media.ToString("F3", CultureInfo.InvariantCulture));
 
-            // mostrar todos os elentos que estejam a baixo da média
+            // mostrar todos os elementos que estejam a baixo da média
             for(int i = 0; i < n; i++)
             {
                 if(a[i] < media)

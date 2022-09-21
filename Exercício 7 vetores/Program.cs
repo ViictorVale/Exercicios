@@ -21,7 +21,7 @@ namespace Exercício_7_vetores
             {
                 b[i] = int.Parse(s[i]);
             }
-
+          
             int[] c = new int[n];
             for(int i = 0; i < n; i++)
             {

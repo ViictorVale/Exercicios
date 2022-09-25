@@ -36,7 +36,7 @@ namespace Exercicio_2_matriz
                     }
                 }
             }
-            Console.WriteLine("QUANTIDADE DE NEGATIVOS: " + cont);
+            Console.WriteLine("QUANTIDADE DE NEGATIVOS = " + cont);
 
         }
     }
